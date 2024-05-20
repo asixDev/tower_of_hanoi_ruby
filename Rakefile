@@ -1,4 +1,7 @@
 # frozen_string_literal: true
 
-require "bundler/gem_tasks"
-task default: %i[]
+task :default => [:run]
+
+task :run do
+    ruby "lib/hanoi.rb"
+end
